@@ -54,8 +54,8 @@ int main(void){
     #define NUMOFTESTCMDS   3
     char *cmds[NUMOFTESTCMDS];
     cmds[0] = "test some text";
-    cmds[1] = "prgword 0x5555 0xAA 55 1234\n\r";
-    cmds[2] = "prgbyte 54 test.bin\n\r";
+    cmds[1] = "prgword 0x5555 0xAA 55 1234\n";
+    cmds[2] = "prgbyte 54 test.bin\n";
     int i;
 
     if( cli_register_cmd("prgbblk", &prgbblk ) == -1 ){ printf("error"); }
